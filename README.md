@@ -170,11 +170,11 @@ These configurations reproduce the research setup but still contain cluster-spec
 
 ## Acknowledgements
 
-This codebase builds on [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [verl](https://github.com/volcengine/verl), [vLLM](https://github.com/vllm-project/vllm), [Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct), and the [GIER dataset](https://sites.google.com/view/gierdataset/home).
+This codebase builds on [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [verl](https://github.com/volcengine/verl), [vLLM](https://github.com/vllm-project/vllm), [Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct), [GIER dataset](https://sites.google.com/view/gierdataset/home) [MIT-Adobe-FiveK](https://data.csail.mit.edu/graphics/fivek/).
 
 ## Citation
 
-If you find this work useful, please cite the CVPR paper:
+If you find this work useful, please cite the paper:
 
 ```bibtex
 @InProceedings{Zhu_2026_CVPR,
