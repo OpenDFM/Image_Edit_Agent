@@ -32,7 +32,7 @@ The released system is based on Qwen2.5-VL-7B and supports 16 global photo-retou
 
 ## Demo
 
-[Demo Video](assets/IEA_demo_en.mp4)
+https://github.com/user-attachments/assets/836753eb-2a53-44c6-ae1d-8511d418f092
 
 ## Repository Structure
 
