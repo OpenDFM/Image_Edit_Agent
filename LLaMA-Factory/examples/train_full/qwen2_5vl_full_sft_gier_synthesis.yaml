@@ -1,0 +1,50 @@
+### model
+model_name_or_path: ../verl/verl-0.4.1/checkpoints/verl_grpo_gier_both/qwen2_5_vl_7b_gier_both/hf_1834
+image_max_pixels: 262144
+video_max_pixels: 16384
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+freeze_vision_tower: true
+freeze_multi_modal_projector: true
+freeze_language_model: false
+deepspeed: examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: gier_sft_synthesis, gier_sft_distill, gier_sft_distill, gier_sft_summary, gier_sft_summary, gier_sft_summary, gier_sft_summary, gier_sft_summary
+template: qwen2_vl
+cutoff_len: 2048
+max_samples: 1000000
+overwrite_cache: true
+preprocessing_num_workers: 16
+dataloader_num_workers: 16
+
+### output
+output_dir: saves/qwen2_5vl-7b-gier-synthesis-new
+logging_steps: 1
+save_steps: 2000
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: true
+report_to: wandb  # choices: [none, wandb, tensorboard, swanlab, mlflow]
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 2
+learning_rate: 1.0e-5
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+### eval
+eval_dataset: gier_sft_synthesis_test
+# val_size: 0.01
+per_device_eval_batch_size: 4
+eval_strategy: steps
+eval_steps: 500

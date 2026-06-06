@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Edit Agent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="chat-container full-width">
+        <div class="chat-header">
+            <div class="header-content">
+                <h1><i class="fas fa-comment-alt"></i> Image Edit Agent</h1>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="welcome-message">
+                <div class="welcome-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h2>Welcome to Image Edit Agent</h2>
+                <p>Upload an image and enter a message , AI will understand your needs and edit your image.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-comment"></i>
+                        <span>Intelligent Conversation</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-image"></i>
+                        <span>Image Editing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div id="image-preview-container">
+                <!-- Image preview will be displayed here -->
+            </div>
+            <div class="input-actions">
+                <div class="upload-container">
+                    <button id="upload-btn" class="icon-btn" title="Upload Image">
+                        <i class="fas fa-image"></i>
+                    </button>
+                    <span id="upload-success" class="upload-success" style="display: none;">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+
+                    <!-- 比较图片按钮 -->
+                    <button id="compare-btn" class="icon-btn" title="Compare Images">
+                        <i class="fas fa-exchange-alt"></i>
+                    </button>
+                </div>
+                <textarea id="user-input" placeholder="Enter message or edit preference..." rows="1"></textarea>
+                <button id="send-btn" class="btn-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 对比图片上传模态框 -->
+<div id="compare-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Upload historical edited images</h3>
+        <div class="compare-upload-container">
+            <div class="compare-upload-item">
+                <label for="before-image-upload"><i class="fas fa-arrow-left"></i> Before Edit (Original)</label>
+                <input type="file" id="before-image-upload" accept="image/*">
+                <div id="before-preview" class="preview-area"></div>
+            </div>
+            <div class="compare-upload-item">
+                <label for="after-image-upload"><i class="fas fa-arrow-right"></i> After Edit (Result)</label>
+                <input type="file" id="after-image-upload" accept="image/*">
+                <div id="after-preview" class="preview-area"></div>
+            </div>
+        </div>
+        <button id="confirm-compare" class="btn-confirm">Summarize the preferences</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

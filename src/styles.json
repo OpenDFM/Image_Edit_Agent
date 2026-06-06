@@ -1,0 +1,120 @@
+{
+  "styles": {
+    "style01": {
+      "description": "Post-processing for print: whites increase, clarity diminish, texture raise, contrast diminish",
+      "parameters": {
+        "whites": 100,
+        "clarity": -45,
+        "texture": 15,
+        "contrast": -45
+      }
+    },
+    "style02": {
+      "description": "Channel vintage polaroid style: vibrance dim, brightness lower",
+      "parameters": {
+        "vibrance": -45,
+        "brightness": -45
+      }
+    },
+    "style03": {
+      "description": "vibrance: 60 | temperature: -100 | sharpness: 15 | clarity: -30",
+      "parameters": {
+        "vibrance": 60,
+        "temperature": -100,
+        "sharpness": 15,
+        "clarity": -30
+      }
+    },
+    "style04": {
+      "description": "Bring out the colors by minimizeing shadows drastically, amplifying fade adequately",
+      "parameters": {
+        "shadows": -100,
+        "fade": 45
+      }
+    },
+    "style05": {
+      "description": "Create a soft pastel with strongly dim highlights_tint, a bit minimize brightness, substantially diminish natural_contrast",
+      "parameters": {
+        "highlights_tint": -75,
+        "brightness": -30,
+        "natural_contrast": -90
+      }
+    },
+    "style06": {
+      "description": "Optimize image presence with dehaze add, natural_contrast reduce",
+      "parameters": {
+        "dehaze": 100,
+        "natural_contrast": -30
+      }
+    },
+    "style07": {
+      "description": "Settings: clarity - | vibrance ++",
+      "parameters": {
+        "clarity": -15,
+        "vibrance": 75
+      }
+    },
+    "style08": {
+      "description": "Enhance overall clarity by strongly minimizeing shadows, radically decreaseing vibrance, strongly minimizeing exposure",
+      "parameters": {
+        "shadows": -90,
+        "vibrance": -100,
+        "exposure": -100
+      }
+    },
+    "style09": {
+      "description": "Post-processing for portfolio: temperature lower, blacks soften",
+      "parameters": {
+        "temperature": -30,
+        "blacks": -100
+      }
+    },
+    "style10": {
+      "description": "Post-processing for social media: grain add, natural_contrast intensify, exposure intensify",
+      "parameters": {
+        "grain": 75,
+        "natural_contrast": 45,
+        "exposure": 60
+      }
+    },
+    "style11": {
+      "description": "Apply a refined edit: contrast soften, whites intensify, shadows intensify, temperature cut",
+      "parameters": {
+        "contrast": -90,
+        "whites": 15,
+        "shadows": 90,
+        "temperature": -100
+      }
+    },
+    "style12": {
+      "description": "Settings: midtones_tint ++ | clarity - | vibrance --",
+      "parameters": {
+        "midtones_tint": 100,
+        "clarity": -15,
+        "vibrance": -60
+      }
+    },
+    "style13": {
+      "description": "Adjust fade lower, natural_contrast strengthen",
+      "parameters": {
+        "fade": -90,
+        "natural_contrast": 30
+      }
+    },
+    "style14": {
+      "description": "Post-processing for social media: highlights_tint decrease, fade add, blacks add",
+      "parameters": {
+        "highlights_tint": -100,
+        "fade": 45,
+        "blacks": 30
+      }
+    },
+    "style15": {
+      "description": "Adjust whites soften, contrast decrease",
+      "parameters": {
+        "whites": -15,
+        "contrast": -100
+      }
+    }
+  }
+}

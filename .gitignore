@@ -1,0 +1,59 @@
+.idea/
+.codex/
+.agents/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+token.json
+credentials.json
+secrets.json
+.netrc
+id_rsa
+id_ed25519
+
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime output
+*.log
+logs/
+tmp/
+chat_interface/tmp/
+wandb/
+outputs/
+saves/
+checkpoints/
+
+# Local datasets and model weights
+data/*
+!data/.gitkeep
+datasets/*
+!datasets/.gitkeep
+*.parquet
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.pickle
+
+# OS metadata
+.DS_Store
+Thumbs.db

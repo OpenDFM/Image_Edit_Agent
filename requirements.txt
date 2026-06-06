@@ -1,0 +1,9 @@
+colorama>=0.4.6
+Flask>=3.0,<4
+huggingface_hub>=0.34
+numpy>=1.24
+opencv-python>=4.8
+pandas>=2.0
+requests>=2.31
+rouge>=1.0.1
+tqdm>=4.66
