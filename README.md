@@ -8,7 +8,7 @@
 
 **CVPR 2026 Findings**
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red?logo=arXiv)](https://openaccess.thecvf.com/content/CVPR2026F/html/Zhu_IEA_Amateur-Friendly_Conversational_Image_Editing_Agent_via_Three_Stages_of_CVPRF_2026_paper.html)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red?logo=arXiv)](http://arxiv.org/abs/2606.08016)
 [![Paper](https://img.shields.io/badge/Paper-CVPR%202026%20Findings-blue)](https://openaccess.thecvf.com/content/CVPR2026F/html/Zhu_IEA_Amateur-Friendly_Conversational_Image_Editing_Agent_via_Three_Stages_of_CVPRF_2026_paper.html)
 [![Code](https://img.shields.io/badge/Code-Image_Edit_Agent-green?logo=github)](https://github.com/OpenDFM/Image_Edit_Agent)
 [![Data](https://img.shields.io/badge/Data-Google%20Drive-4285F4?logo=googledrive)](https://drive.google.com/drive/folders/1UhM9DViDZkU6NyFKidIMAnF9cZoAXUha?usp=sharing)
